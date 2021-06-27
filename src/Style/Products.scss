@@ -1,0 +1,21 @@
+.products {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  .mainbar {
+    border: 2px solid black;
+
+    .each-product {
+      .product-img {
+        img {
+          object-fit: cover;
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+  }
+  .sidebar {
+    border: 2px solid black;
+  }
+}

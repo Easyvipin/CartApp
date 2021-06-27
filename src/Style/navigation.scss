@@ -1,0 +1,38 @@
+.navigation {
+  display:flex;
+  padding: 0.5rem 0rem;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-items: center;
+  background-color: $textHover;
+  
+  .nav-one,.nav-two{
+    display: flex;
+
+  }
+  .nav-one {
+    width:700px;
+    align-items: center;
+    .logo{
+      width: 100px;
+      height: 30px;
+      margin: 10px;
+    }
+    
+
+  }
+  .nav-two{
+    margin:0px 30px;
+    padding: 0px;
+    list-style: none;
+
+    li{
+      margin:0px 40px;
+      font-size: 18px;
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

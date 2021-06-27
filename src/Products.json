@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "FUBAR",
+      "image": "images/product1.jpeg",
+      "description": "Men Slim Fit Striped Mandarin Collar",
+      "currentprice": 699,
+      "price": "999",
+      "discount": "30% off",
+      "size": ["S", "M", "L", "XL"],
+      "assured": true,
+      "qty": 3
+    },
+    {
+      "id": 2,
+      "brand": "FINIVO FASHION",
+      "image": "/images/product2.jpeg",
+      "description": "Men Regular Fit Solid Spread",
+      "currentprice": 699,
+      "price": "999",
+      "discount": "30% off",
+      "size": ["S", "M", "XL"],
+      "assured": true,
+      "qty": 4
+    },
+    {
+      "id": 3,
+      "brand": "Pepe Jeans",
+      "image": "/images/product3.jpeg",
+      "description": "Men Regular Fit Solid ",
+      "currentprice": 899,
+      "price": "1,999",
+      "discount": "55% off",
+      "size": ["L", "XL"],
+      "assured": false,
+      "qty": 2
+    },
+    {
+      "id": 4,
+      "brand": "Surhi",
+      "image": "/images/product4.jpeg",
+      "description": "Men Slim Fit Checkered ",
+      "currentprice": 499,
+      "price": "1,999",
+      "discount": "75% off",
+      "size": ["M", "L", "XL"],
+      "assured": false,
+      "qty": 5
+    },
+    {
+      "id": 5,
+      "brand": "GESPO",
+      "image": "/images/product5.jpeg",
+      "description": "Men Regular Fit Solid ",
+      "currentprice": 699,
+      "price": "999",
+      "discount": "30% off",
+      "size": ["S", "M", "L", "XL"],
+      "assured": true,
+      "qty": 1
+    },
+    {
+      "id": 1,
+      "brand": "Raymond",
+      "image": "/images/product6.jpeg",
+      "description": "Men slim Fit shirt",
+      "currentprice": 989,
+      "price": "1,799",
+      "discount": "45% off",
+      "size": ["S", "M", "XL"],
+      "assured": true,
+      "qty": 6
+    }
+  ]
+}

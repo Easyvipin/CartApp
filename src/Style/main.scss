@@ -1,0 +1,164 @@
+@import "./Typography.scss", "./colorvars.scss", "./navigation.scss",
+  "./Products.scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $roboto;
+}
+
+/* ui kit classes */
+/* text */
+
+.large-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.xsmall-text {
+  font-size: 13px;
+}
+
+/* text style */
+
+.bold {
+  font-weight: bold;
+  color: $textBold;
+}
+.semi {
+  color: $textSemi;
+}
+.light {
+  color: $textLight;
+}
+.green {
+  color: $textGreen;
+}
+
+.white-text {
+  color: #fff;
+}
+/* images */
+
+.logo-icon {
+  width: 85px;
+}
+
+/* margin - paddings */
+.m-1 {
+  margin: 5px 5px;
+}
+.m-2 {
+  margin: 10px 10px;
+}
+.m-3 {
+  margin: 15px 15px;
+}
+
+.p-1 {
+  padding: 10px 10px;
+}
+.p-2 {
+  padding: 14px 14px;
+}
+.p-3 {
+  padding: 16px 16px;
+}
+/* buttons */
+.btn {
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-yellow {
+  background: #ff9f00;
+  border: none;
+}
+
+/* forms */
+
+/* input forms group */
+
+.input-group {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  background: #fff;
+  padding: 10px 10px;
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* product card */
+
+.product-container {
+  padding: 10px 10px;
+
+  .product-list {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .product-card {
+      background: rgb(250, 250, 250);
+      .card-image {
+        img {
+          width: 300px;
+          height: 400px;
+          object-fit: cover;
+        }
+      }
+    }
+    .card-body {
+    }
+    .card-footer {
+      margin: 20px 0px;
+    }
+  }
+}
+.product-card {
+  padding: 10px 10px;
+}
+
+/* cart-container */
+.cart-container {
+  .message {
+    text-align: center;
+    border: 1px solid $textGreen;
+    font-size: 20px;
+    width: 100%;
+  }
+  .cart-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    .each-item {
+      border: 2px solid $textLight;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .product-img {
+        width: 150px;
+      }
+    }
+  }
+}
