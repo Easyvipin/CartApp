@@ -3,13 +3,13 @@ import ProductData from "../Products.json";
 import { useCartContext } from "../context/CartContextProvider";
 
 const Products = () => {
-  const { addToCart, removeFromCart } = useCartContext();
+  const { addToCart, checkItExist } = useCartContext();
   return (
     <div className="product-container">
       <ul className="product-list">
         {ProductData.products.map((product) => {
           return (
-            <li className="product-card p-1 m-1">
+            <li className="product-card p-1 m-1" key={product.id}>
               <div className="card-image">
                 {/* image */}
                 <img src={product.image} alt="" />
@@ -31,24 +31,21 @@ const Products = () => {
                 </span>
               </div>
               <div className="card-footer product-actions">
-                <button
-                  className="btn btn-yellow p-1 bold white-text"
-                  onClick={() => {
-                    addToCart(product);
-                  }}
-                >
-                  {" "}
-                  ADD <i class="fa fa-cart-plus"></i>
-                </button>
-                <button
-                  className="btn btn-yellow p-1 bold white-text"
-                  onClick={() => {
-                    removeFromCart(product.id);
-                  }}
-                >
-                  {" "}
-                  remove <i class="fa fa-cart-plus"></i>
-                </button>
+                {checkItExist(product.id) === true ? (
+                  <h5>
+                    Added <i class="fa fa-cart-plus"></i>
+                  </h5>
+                ) : (
+                  <button
+                    className="btn btn-yellow p-1 bold white-text"
+                    onClick={() => {
+                      addToCart(product);
+                    }}
+                  >
+                    {" "}
+                    ADD <i class="fa fa-cart-plus"></i>
+                  </button>
+                )}
               </div>
             </li>
           );
